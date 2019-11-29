@@ -4,13 +4,15 @@ public class Candy {
 
     private String brand;
     private Integer quantity;
-    private Float price;
+    private Double price;
+    private Integer id;
 
 
-    public Candy(String brand, Integer quantity, Float price) {
+    public Candy(String brand, Integer quantity, Double price, Integer id) {
         this.brand = brand;
         this.quantity = quantity;
         this.price = price;
+        this.id = id;
     }
 
     public Candy() {
@@ -33,11 +35,19 @@ public class Candy {
         this.quantity = quantity;
     }
 
-    public Float getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(Float price) {
+    public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }
